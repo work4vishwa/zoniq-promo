@@ -29,7 +29,7 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-collage">
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Collage image ${index + 1}`} />
+          <img key={index} src={src} alt={`Collage ${index + 1}`} />
         ))}
       </div>
       <div className="hero-content">
