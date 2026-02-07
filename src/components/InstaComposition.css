@@ -152,7 +152,7 @@
   opacity: 0;
   transition: transform 0.6s ease, opacity 0.6s ease;
   color: #ffffff;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
@@ -170,7 +170,7 @@
   transition: transform 0.6s ease 0.15s, opacity 0.6s ease 0.15s;
   color: #ffd700;
   font-weight: 700;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Playfair Display', serif;
   text-transform: uppercase;
   text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }

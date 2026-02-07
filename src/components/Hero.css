@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   background: #0a0a0a;
+  padding-top: 80px; /* Added to push content below the navbar */
 }
 
 .hero-collage {
@@ -55,32 +56,107 @@
   margin: 0 auto;
 }
 
-.hero-badge {
-  display: inline-block;
-  padding: 10px 28px;
-  background: linear-gradient(135deg, #dc143c, #ff1744);
-  color: #ffffff;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 4px;
-  border-radius: 0;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  font-family: 'Space Grotesk', sans-serif;
-  position: relative;
-  overflow: hidden;
-  animation: slideInDown 0.8s ease-out;
+.hero-event-by {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 3;
+  animation: fadeInDown 0.8s ease-out;
 }
 
-.hero-badge::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  animation: shimmer 3s infinite;
+.event-by-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: 'Poppins', sans-serif;
+}
+
+.vivikta-branding {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 15px;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}
+
+.vivikta-branding:hover {
+  background: rgba(10, 10, 10, 0.85);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateX(5px);
+}
+
+.vivikta-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-event-by {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .vivikta-text {
+    font-size: 0.65rem;
+  }
+  
+  .vivikta-branding {
+    padding: 6px 12px;
+    gap: 8px;
+  }
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  margin-top: -10px; /* Adjust as needed for spacing after title */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-badge:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
 
 @keyframes slideInDown {
@@ -109,9 +185,9 @@
   position: relative;
   display: inline-block;
   color: #ffffff;
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  margin: 20px 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  margin: 40px 0 20px 0;
   text-transform: uppercase;
   animation: fadeInUp 1s ease-out 0.2s both;
   text-shadow: 0 0 40px rgba(220, 20, 60, 0.5);
@@ -164,7 +240,7 @@
   letter-spacing: 3px;
   font-weight: 300;
   color: #ffffff;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cinzel', serif;
   animation: fadeInUp 1s ease-out 0.4s both;
 }
 
@@ -175,7 +251,7 @@
   letter-spacing: 2px;
   font-weight: 400;
   color: #ffd700;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   animation: fadeInUp 1s ease-out 0.6s both;
 }
 
@@ -197,7 +273,7 @@
   text-decoration: none;
   position: relative;
   overflow: hidden;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   animation: fadeInUp 1s ease-out 0.8s both;
 }
@@ -262,7 +338,7 @@
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   transition: all 0.3s;
 }
 
@@ -283,7 +359,7 @@
   gap: 8px;
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.8);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
 }
 
@@ -296,7 +372,7 @@
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s;
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1rem;
   position: relative;
   padding: 0 5px;

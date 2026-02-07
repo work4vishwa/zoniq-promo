@@ -19,11 +19,26 @@
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: 700;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 0.3s;
     position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .zoniq-logo-img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s;
+    filter: brightness(1) drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+  }
+
+  .nav-logo a:hover .zoniq-logo-img {
+    transform: scale(1.1);
+    filter: brightness(1.2) drop-shadow(0 4px 8px rgba(220, 20, 60, 0.4));
   }
 
   .nav-logo a::after {
@@ -53,7 +68,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0;
     transition: all 0.3s;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     position: relative;
     text-transform: uppercase;

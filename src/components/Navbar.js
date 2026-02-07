@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import zoniqLogo from '../assets/zoniq.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,9 @@ const Navbar = () => {
   return (
     <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-logo">
-        <a href="/">ZONIQ</a>
+        <a href="/">
+          <img src={zoniqLogo} alt="Zoniq" className="zoniq-logo-img" />
+        </a>
       </div>
       <div className={`nav-items ${isOpen && 'open'}`}>
         <a href="#home">Home</a>

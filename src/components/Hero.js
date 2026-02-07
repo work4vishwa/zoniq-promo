@@ -12,6 +12,7 @@ import candid9 from '../assets/pics_candid/1 (9).jpg';
 import candid10 from '../assets/pics_candid/1 (10).jpg';
 import candid11 from '../assets/pics_candid/1 (11).JPG';
 import candid12 from '../assets/pics_candid/1 (12).JPG';
+import ViviktaLogo from './ViviktaLogo';
 
 const Hero = () => {
   const images = [
@@ -33,11 +34,18 @@ const Hero = () => {
         ))}
       </div>
       <div className="hero-content">
-        <div className="hero-badge">LIVE CONCERT</div>
+        <div className="hero-event-by">
+          <span className="event-by-label">EVENT BY</span>
+          <div className="vivikta-branding">
+            <ViviktaLogo size={35} />
+            <span className="vivikta-text">VIVIKTA ENTERTAINERS PVT. LTD.</span>
+          </div>
+        </div>
         <h1 className="hero-title">
           <span>MADHUBANTI</span>
           <span className="hero-title-blur">MADHUBANTI</span>
         </h1>
+        <div className="hero-badge">LIVE IN CONCERT</div>
         <p className="hero-subtitle">An Unforgettable Musical Journey</p>
         <p className="hero-description">13.9M+ Monthly Listeners • 983M+ YouTube Views</p>
         <a href="https://zoniq.in" target="_blank" rel="noopener noreferrer" className="hero-ticket-btn">
@@ -50,7 +58,7 @@ const Hero = () => {
             <span>Get Your Tickets Now</span>
           </div>
           <div className="ticketing-link">
-            <span>Powered by</span>
+            <span></span>
             <a href="https://zoniq.in" target="_blank" rel="noopener noreferrer" className="zoniq-link">
               <strong>zoniq.in</strong>
             </a>
