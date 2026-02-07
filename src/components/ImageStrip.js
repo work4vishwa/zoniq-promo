@@ -41,7 +41,7 @@ const ImageStrip = () => {
     <section id="gallery" ref={ref} className={`kinetic-strip ${isVisible ? 'is-visible' : ''}`}>
       <div className="strip">
         {images.map((src, index) => (
-          <img key={index} src={src} alt={`Strip image ${index + 1}`} />
+          <img key={index} src={src} alt={`Strip ${index + 1}`} />
         ))}
       </div>
     </section>
