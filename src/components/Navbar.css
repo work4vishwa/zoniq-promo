@@ -37,30 +37,10 @@
   }
 
   .nav-logo a:hover .zoniq-logo-img {
-    transform: scale(1.1);
-    filter: brightness(1.2) drop-shadow(0 4px 8px rgba(220, 20, 60, 0.4));
+    transform: scale(1.05);
+    filter: brightness(1.1) drop-shadow(0 4px 12px rgba(220, 20, 60, 0.5));
   }
 
-  .nav-logo a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: linear-gradient(90deg, #dc143c, #ffd700);
-    transition: width 0.3s;
-  }
-
-  .nav-logo a:hover::after {
-    width: 100%;
-  }
-  
-  .nav-logo a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 20px rgba(220, 20, 60, 0.6);
-  }
-  
   .nav-items a {
     color: #ffffff;
     text-decoration: none;
@@ -84,17 +64,12 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background: linear-gradient(90deg, #dc143c, #ffd700);
+    background: #dc143c;
     transition: width 0.3s;
   }
 
   .nav-items a:hover::before {
     width: 80%;
-  }
-  
-  .nav-items a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
   }
   
   .nav-toggle {
@@ -126,9 +101,7 @@
   .navbar.scrolled {
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px);
-    box-shadow: 
-      0 5px 20px rgba(0, 0, 0, 0.5),
-      0 0 30px rgba(220, 20, 60, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 20px rgba(220, 20, 60, 0.2);
     border-bottom-color: rgba(220, 20, 60, 0.3);
   }
   
@@ -158,3 +131,4 @@
       display: flex;
     }
   }
+

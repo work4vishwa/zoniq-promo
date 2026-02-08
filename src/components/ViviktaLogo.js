@@ -11,3 +11,4 @@ const ViviktaLogo = ({ size = 40, className = '' }) => {
 };
 
 export default ViviktaLogo;
+

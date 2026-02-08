@@ -1,68 +1,28 @@
 import React from 'react';
 import './Hero.css';
-import candid1 from '../assets/pics_candid/1 (1).JPG';
-import candid2 from '../assets/pics_candid/1 (2).JPG';
-import candid3 from '../assets/pics_candid/1 (3).JPG';
-import candid4 from '../assets/pics_candid/1 (4).JPG';
-import candid5 from '../assets/pics_candid/1 (5).JPG';
-import candid6 from '../assets/pics_candid/1 (6).jpg';
-import candid7 from '../assets/pics_candid/1 (7).jpg';
-import candid8 from '../assets/pics_candid/1 (8).jpg';
-import candid9 from '../assets/pics_candid/1 (9).jpg';
-import candid10 from '../assets/pics_candid/1 (10).jpg';
-import candid11 from '../assets/pics_candid/1 (11).JPG';
-import candid12 from '../assets/pics_candid/1 (12).JPG';
-import ViviktaLogo from './ViviktaLogo';
+import videoSrc from '../assets/videos/8.mp4'; 
 
 const Hero = () => {
-  const images = [
-    candid1, candid2, candid3, candid4, candid5, candid6,
-    candid7, candid8, candid9, candid10, candid11, candid12
-  ];
-
-  // Fisher-Yates shuffle
-  for (let i = images.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [images[i], images[j]] = [images[j], images[i]];
-  }
-
   return (
     <section id="home" className="hero">
-      <div className="hero-collage">
-        {images.map((src, index) => (
-          <img key={index} src={src} alt={`Collage ${index + 1}`} />
-        ))}
-      </div>
+      <video autoPlay loop muted className="hero-video">
+        <source src={videoSrc} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div className="hero-content">
-        <div className="hero-event-by">
-          <span className="event-by-label">EVENT BY</span>
-          <div className="vivikta-branding">
-            <ViviktaLogo size={35} />
-            <span className="vivikta-text">VIVIKTA ENTERTAINERS PVT. LTD.</span>
-          </div>
-        </div>
         <h1 className="hero-title">
           <span>MADHUBANTI</span>
-          <span className="hero-title-blur">MADHUBANTI</span>
         </h1>
         <div className="hero-badge">LIVE IN CONCERT</div>
         <p className="hero-subtitle">An Unforgettable Musical Journey</p>
         <p className="hero-description">13.9M+ Monthly Listeners • 983M+ YouTube Views</p>
         <a href="https://zoniq.in" target="_blank" rel="noopener noreferrer" className="hero-ticket-btn">
           <span>BOOK TICKETS</span>
-          <i className="fas fa-arrow-right"></i>
         </a>
         <div className="hero-ticketing-partner">
-          <div className="ticketing-badge">
-            <i className="fas fa-ticket-alt"></i>
-            <span>Get Your Tickets Now</span>
-          </div>
-          <div className="ticketing-link">
-            <span></span>
             <a href="https://zoniq.in" target="_blank" rel="noopener noreferrer" className="zoniq-link">
-              <strong>zoniq.in</strong>
+              Get Your Tickets: <strong>zoniq.in</strong>
             </a>
-          </div>
         </div>
       </div>
     </section>
