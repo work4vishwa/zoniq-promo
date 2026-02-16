@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/zoniq-promo/static/css/main.0e78aacb.css",
-    "main.js": "/zoniq-promo/static/js/main.a0817159.js",
+    "main.css": "/zoniq-promo/static/css/main.31fae68f.css",
+    "main.js": "/zoniq-promo/static/js/main.9b3f62f2.js",
     "static/js/453.57115949.chunk.js": "/zoniq-promo/static/js/453.57115949.chunk.js",
+    "static/media/8.mp4": "/zoniq-promo/static/media/8.3976be4b616ff25a6c52.mp4",
     "static/media/1 (11).JPG": "/zoniq-promo/static/media/1 (11).11267abcbc0cb78cd110.JPG",
     "static/media/1 (20).JPG": "/zoniq-promo/static/media/1 (20).3cc6c384deb306446fd6.JPG",
     "static/media/1 (5).JPG": "/zoniq-promo/static/media/1 (5).3cc6c384deb306446fd6.JPG",
@@ -32,13 +33,15 @@
     "static/media/2 (4).jpeg": "/zoniq-promo/static/media/2 (4).ffd1e661e4383471d5d8.jpeg",
     "static/media/1 (24).jpg": "/zoniq-promo/static/media/1 (24).fe72d62e412556b6d622.jpg",
     "static/media/1 (9).jpg": "/zoniq-promo/static/media/1 (9).fe72d62e412556b6d622.jpg",
+    "static/media/zoniq.png": "/zoniq-promo/static/media/zoniq.016cbd2be3eeaa1087a5.png",
+    "static/media/vivikta.png": "/zoniq-promo/static/media/vivikta.3252af9d29a1c02b37b4.png",
     "index.html": "/zoniq-promo/index.html",
-    "main.0e78aacb.css.map": "/zoniq-promo/static/css/main.0e78aacb.css.map",
-    "main.a0817159.js.map": "/zoniq-promo/static/js/main.a0817159.js.map",
+    "main.31fae68f.css.map": "/zoniq-promo/static/css/main.31fae68f.css.map",
+    "main.9b3f62f2.js.map": "/zoniq-promo/static/js/main.9b3f62f2.js.map",
     "453.57115949.chunk.js.map": "/zoniq-promo/static/js/453.57115949.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e78aacb.css",
-    "static/js/main.a0817159.js"
+    "static/css/main.31fae68f.css",
+    "static/js/main.9b3f62f2.js"
   ]
 }
