@@ -1,0 +1,351 @@
+.footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 60px 0 30px;
+  position: relative;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #dc143c;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+  min-width: 250px;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.logo-text::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background: #dc143c;
+}
+
+.ticketing-partner {
+  margin: 25px 0;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(220, 20, 60, 0.3);
+  border-radius: 4px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.ticketing-partner:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: rgba(220, 20, 60, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(220, 20, 60, 0.25);
+}
+
+.ticketing-partner-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ticketing-partner-header i {
+  color: #dc143c; /* Changed from #ffd700 */
+  font-size: 1.2rem;
+}
+
+.ticketing-partner-header span {
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.zoniq-promo-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e0e0e0; /* Changed from #ffd700 */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.zoniq-promo-link strong {
+  color: #ffffff; /* Changed from gradient */
+  transition: all 0.3s;
+}
+
+.zoniq-promo-link i {
+  font-size: 1rem;
+  transition: transform 0.3s;
+}
+
+.zoniq-promo-link:hover {
+  transform: translateX(5px);
+  color: #dc143c; /* Added hover color */
+}
+
+.zoniq-promo-link:hover strong {
+  color: #dc143c; /* Changed from gradient */
+}
+
+.zoniq-promo-link:hover i {
+  transform: translate(3px, -3px);
+}
+
+.ticketing-description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.85rem;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.socials a {
+  color: #ffffff;
+  font-size: 1.4rem;
+  transition: all 0.3s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px; /* Changed from 0 */
+}
+
+.socials a:hover {
+  color: #dc143c;
+  border-color: #dc143c;
+  background: rgba(220, 20, 60, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.3);
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.links h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.links ul li {
+  margin-bottom: 12px;
+}
+
+.links ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
+  padding-left: 0;
+}
+
+.links ul li a::before {
+  content: '→';
+  position: absolute;
+  left: -20px;
+  opacity: 0;
+  transition: all 0.3s;
+  color: #dc143c;
+}
+
+.links ul li a:hover::before {
+  opacity: 1;
+  left: -15px;
+}
+
+.links ul li a:hover {
+  color: #dc143c; /* Changed from #ffd700 */
+  transform: translateX(5px);
+}
+
+.contact-info h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #dc143c;
+  transition: all 0.3s;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: #dc143c; /* Changed from #ffd700 */
+  transform: translateX(5px);
+}
+
+.contact-item i {
+  font-size: 1.2rem;
+  color: #dc143c; /* Changed from #ffd700 */
+  width: 24px;
+  text-align: center;
+}
+
+.contact-item a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.contact-item a:hover {
+  color: #dc143c; /* Changed from #ffd700 */
+  text-shadow: 0 0 10px rgba(220, 20, 60, 0.5);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-event-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-event-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-vivikta-branding {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.footer-vivikta-branding:hover {
+  background: rgba(220, 20, 60, 0.1);
+  border-color: rgba(220, 20, 60, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(220, 20, 60, 0.2);
+}
+
+.footer-vivikta-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  white-space: nowrap;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  opacity: 0.7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-copyright a {
+  color: #dc143c; /* Changed from #ffd700 */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-copyright a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-vivikta-text {
+    font-size: 0.65rem;
+  }
+  
+  .footer-vivikta-branding {
+    padding: 6px 15px;
+  }
+}
